@@ -9,7 +9,7 @@
 .debug header{
     width: 100%;
     height: 200px;
-    border: 4px double black;
+    border: 4px double blue;
 }
 
 .debug header div{
@@ -17,7 +17,7 @@
 }
 
 .bar{
-    border: 2px solid red;
+    border: 2px solid green;
     margin-top: 10px;
     margin-left: 15%;
     margin-right: 15%;
@@ -28,14 +28,14 @@
 .bar .top-bar{
     width: 200px;
     height: 60px;
-    border: 1px solid green;
+    border: 1px solid red;
     margin-bottom: 15px;  
 }
 
 .bar .bottom-bar{
     width: 600px;
     height: 70px;
-    border: 1px solid green;
+    border: 1px solid red;
 }
 
 .bar .top-bar img{
@@ -50,4 +50,82 @@
     margin-top: 3%;
     margin-left: 2%;
     float: left;
+}
+
+.debug main{
+    width: 100%;
+    height: 850px;
+    border: 4px double blue;
+}
+
+.main-top{
+    border: 2px solid green;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 350px;
+}
+
+.main-top h2{
+    border: 2px solid red;
+    margin-top: 150px;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 20%;
+    height: 55px;
+}
+
+.main-top p{
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 20%;
+    height: 55px;
+
+}
+
+.main-bottom{
+    border: 2px solid green;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 450px;
+}
+
+.main-bottom div h1{
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 20%;
+    height: 55px;
+}
+
+.main-bottom div span{
+    display: block;
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 20%;
+    height: 55px;
+}
+
+.debug footer{
+    width: 100%;
+    height: 150px;
+    border: 4px double blue;
+
+}
+
+.greets{
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 17%;
+    margin-right: 15%;
+    width: 20%;
+    height: 55px;
 }
