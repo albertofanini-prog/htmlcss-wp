@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*DEBUG*/
+
+.debug header{
+    width: 100%;
+    height: 200px;
+    border: 4px double black;
+}
+
+.debug header div{
+    padding: 20px;
+}
+
+.bar{
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 175px;
+}
+
+.bar .top-bar{
+    width: 200px;
+    height: 60px;
+    border: 1px solid green;
+    margin-bottom: 15px;  
+}
+
+.bar .bottom-bar{
+    width: 600px;
+    height: 70px;
+    border: 1px solid green;
+}
+
+.bar .top-bar img{
+    width: 70%;
+    height: 100%;
+}
+
+.bar .bottom-bar nav{
+    width: 75px;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 3%;
+    margin-left: 2%;
+    float: left;
+}
