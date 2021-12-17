@@ -2,13 +2,178 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/*DEBUG*/
+.bar{
+    max-width: 1024px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.bar .top-bar{
+    max-width: 200px;
+    max-height: 60px;
+    margin: 0;
+    border: none;
+}
+
+.bar .bottom-bar{
+    width: 900px;
+    height: 40px;
+    margin: 0;
+    border: none;
+}
+
+.bar .top-bar img{
+    width: 60%;
+    height: 100%;
+}
+
+.bar .bottom-bar nav a{
+    max-width: 145px;
+    max-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    float: left;
+    text-align: left;
+    font-size: small;
+    white-space: nowrap;
+    text-decoration: none;
+    color: silver;
+}
+
+.main-top{
+    margin: 0 auto;
+    max-width: 1024px;
+    height: 400px;
+    padding: 20px;
+    background-image: url('img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+.main-top h2{
+    margin: 0;
+    top: 60%;
+    left: 50px;
+    width: 500px;
+    height: 55px;
+    padding: 20px;
+    position: absolute;
+    padding: 0 10px;
+    color: white;
+}
+
+.main-top p{
+    margin: 0;
+    top: 80%;
+    left: 50px;
+    width: 500px;
+    height: 55px;
+    position: absolute;
+    padding: 0 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.main-bottom{
+    max-width: 1024px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.container{
+    padding-top: 10px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.row{
+    padding: 20px;
+    left: 0;
+    height: 600px;
+}
+
+.row [class^="col-"]{
+    border: 2 px solid orange;
+    padding: 20px;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row [class^="col-"]{
+    float: left;
+    padding: 0 20px;
+}
+
+.row [class^="col-"]:first-child{
+    padding-left: 0;
+}
+
+.row [class^="col-"]:last-child{
+    padding-right: 0;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-12 > h2{
+    font-size: xx-large;
+    left: 0;
+}
+
+.col-12 > p{
+    color: silver;
+}
+
+.col-6{
+    width: 50%;
+    height: 60%;
+}
+
+.col-3{
+    width: 25%;
+    height: 250px;
+}
+
+.module{
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+}
+
+#pic{
+    height: 175px;
+    width: 100%;
+    background-image: ('img/img-1.jpg');
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+#text{
+    height: 300px;
+    width: 100%;
+}
+
+#text > h4{
+    padding-bottom: 7px;
+    text-align: left;
+}
+/*DEBUG
 
 .debug header{
     width: 100%;
-    height: 200px;
+    height: 140px;
     border: 4px double blue;
 }
 
@@ -18,24 +183,23 @@
 
 .bar{
     border: 2px solid green;
-    margin-top: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 175px;
+    max-width: 1024px;
+    height: 130px;
+    margin: 0 auto;
 }
 
 .bar .top-bar{
-    width: 200px;
-    height: 60px;
+    max-width: 200px;
+    max-height: 60px;
     border: 1px solid red;
-    margin-bottom: 15px;  
+    margin: 0;
 }
 
 .bar .bottom-bar{
-    width: 600px;
-    height: 70px;
+    width: 900px;
+    height: 40px;
     border: 1px solid red;
+    margin: 0;
 }
 
 .bar .top-bar img{
@@ -43,14 +207,18 @@
     height: 100%;
 }
 
-.bar .bottom-bar nav{
-    width: 75px;
-    height: 40px;
+.bar .bottom-bar nav a{
+    max-width: 145px;
+    max-height: 20px;
     border: 1px solid black;
-    margin-top: 3%;
-    margin-left: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
     float: left;
+    text-align: left;
+    font-size: small;
 }
+
 
 .debug main{
     width: 100%;
@@ -59,60 +227,49 @@
 }
 
 .main-top{
+    margin: 0 auto;
     border: 2px solid green;
-    margin-top: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 350px;
+    max-width: 1024px;
+    height: 400px;
+    padding: 20px;
+    background-image: url('img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .main-top h2{
     border: 2px solid red;
-    margin-top: 150px;
-    margin-left: 5%;
-    margin-right: 15%;
-    width: 20%;
+    margin: 0;
+    top: 60%;
+    left: 50px;
+    width: 500px;
     height: 55px;
+    padding: 20px;
+    position: absolute;
+    padding: 0 10px;
+    color: white;
 }
 
 .main-top p{
     border: 2px solid red;
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 15%;
-    width: 20%;
+    margin: 0;
+    top: 80%;
+    left: 50px;
+    width: 500px;
     height: 55px;
-
+    position: absolute;
+    padding: 0 10px;
+    font-size: 14px;
+    color: white;
 }
 
 .main-bottom{
     border: 2px solid green;
-    margin-top: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 450px;
-}
-
-.main-bottom div h1{
-    border: 2px solid red;
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 15%;
-    width: 20%;
-    height: 55px;
-}
-
-.main-bottom div span{
-    display: block;
-    border: 2px solid red;
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 15%;
-    width: 20%;
-    height: 55px;
-}
+    max-width: 1024px;
+    height: 850px;
+    margin: 0 auto;
+}*/
 
 .debug footer{
     width: 100%;
@@ -129,3 +286,95 @@
     width: 20%;
     height: 55px;
 }
+/*
+.debug .container{
+    border: 2px dashed blue;
+    padding: 20px;
+    min-height: 800px;
+    left: 0;
+}
+
+.debug .row{
+    border: 5px double red;
+    padding: 20px;
+    left: 0;
+    height: 600px;
+}
+
+.debug .row [class^="col-"]{
+    border: 2 px solid orange;
+    padding: 20px;
+}
+
+.row::after{
+        content: '';
+        display: block;
+        clear: both;
+}
+
+.row [class^="col-"]{
+        float: left;
+        padding: 0 20px;
+}
+    
+.row [class^="col-"]:first-child{
+        padding-left: 0;
+}
+    
+.row [class^="col-"]:last-child{
+        padding-right: 0;
+}
+    
+.col-6{
+        width: 50%;
+        height: 60%;
+}
+    
+.col-3{
+        width: 25%;
+        height: 250px;
+}
+
+.col-12{
+        width: 100%;
+}
+
+.col-12 > h2{
+    font-size: x-large;
+    left: 0;
+}
+
+.col-12 > p{
+    color: silver;
+}
+
+.module{
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+}
+
+#pic{
+    height: 175px;
+    width: 100%;
+    background-image: ('img/img-1.jpg');
+    background-size: cover;
+}
+
+#text{
+    height: 300px;
+    width: 100%;
+}
+
+.overlay--black::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: o;
+}*/
